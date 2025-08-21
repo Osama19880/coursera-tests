@@ -1,1 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Food, LLC — Module 3 Solution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 3.3.7 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
+  <!-- Navbar (scrolls away; not fixed) -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Food, LLC</a>
+      </div>
+
+      <!-- Mobile-only menu -->
+      <div class="collapse navbar-collapse" id="mobile-menu">
+        <!-- visible-xs ensures nothing shows on sm/md -->
+        <ul class="nav navbar-nav visible-xs">
+          <li><a href="#chicken" class="mobile-nav">Chicken</a></li>
+          <li><a href="#beef" class="mobile-nav">Beef</a></li>
+          <li><a href="#sushi" class="mobile-nav">Sushi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Heading -->
+  <header class="container">
+    <h1 id="top" class="text-center">Our Menu</h1>
+  </header>
+
+  <!-- REQUIRED GRADED PART: one tall, full-width section using Bootstrap grid -->
+  <section class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="tall-section">
+          <p class="lead">This is the required tall section. It stretches full width in the grid and is tall enough to require scrolling.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, arcu et auctor vehicula, justo nisi
+            egestas libero, vitae sagittis neque justo a nibh. Sed bibendum, quam quis bibendum rutrum, magna sem finibus
+            leo, vitae dignissim arcu libero non arcu. Mauris luctus, nibh in tristique varius, orci massa pretium mauris,
+            eget bibendum mi lorem vitae lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+            cubilia curae; Suspendisse potenti. Vivamus vel rutrum nibh, vitae vehicula arcu. Integer venenatis dapibus
+            nibh, in pharetra lorem ultricies vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas.
+          </p>
+          <!-- Add more content if you want; height is also enforced via CSS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPTIONAL (not graded): 3 content sections. Keep for practice or remove. -->
+  <section class="container optional-sections">
+    <div class="row">
+      <div id="chicken" class="col-xs-12 col-sm-6 col-md-4">
+        <div class="panel panel-default section-card">
+          <div class="panel-heading text-center"><h3 class="panel-title">Chicken</h3></div>
+          <div class="panel-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae faucibus nibh. Pellentesque vel
+              posuere lorem. Mauris ultrices tincidunt libero.
+            </p>
+            <p><a href="#top">Back to Top</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="beef" class="col-xs-12 col-sm-6 col-md-4">
+        <div class="panel panel-default section-card">
+          <div class="panel-heading text-center"><h3 class="panel-title">Beef</h3></div>
+          <div class="panel-body">
+            <p>
+              Quisque euismod, justo nec suscipit tristique, nisl urna volutpat tortor, sit amet dictum risus orci nec diam.
+              Phasellus ut hendrerit mi.
+            </p>
+            <p><a href="#top">Back to Top</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="sushi" class="col-xs-12 col-sm-12 col-md-4">
+        <div class="panel panel-default section-card">
+          <div class="panel-heading text-center"><h3 class="panel-title">Sushi</h3></div>
+          <div class="panel-body">
+            <p>
+              Donec fermentum, augue id rhoncus pellentesque, ante libero laoreet erat, nec pulvinar lectus eros id enim.
+              Nunc mattis congue urna at posuere.
+            </p>
+            <p><a href="#top">Back to Top</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /OPTIONAL -->
+
+  <!-- jQuery (required for Bootstrap 3) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- Bootstrap 3.3.7 JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
